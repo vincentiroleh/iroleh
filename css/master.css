@@ -16,23 +16,37 @@ body {
 }
 
 .card-image {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   border-radius: 150px;
+  transition: transform .3s;
+
 }
-.card-input {
-  width: 95%;
-  height: 50px;
-  margin-top: 30px;
-  padding-left: 15px;
+.card-image:hover {
+  transform: scale(1.2);
+  filter: grayscale(100%);
+}
+
+.card-paragraph {
+  text-align: center;
+  font-size: 18px;
   color: coral;
-  font-size: 14px;
+  margin-top: 20px;
+  line-height: 25px;
+  letter-spacing: 0.11px;
 }
-.card-button {
-  width: 430px;
-  height: 50px;
-  background-color: coral;
-  color: #fff;
-  border: 0px;
-  margin-top: 30px;
+
+.card-social {
+  text-align: center;
+  width: 95%;
+  margin-top: 40px;
+}
+
+.fab:hover {
+  transform: scale(1.2);
+}
+
+.card-social a {
+  padding: 30px;
+  color: coral;
 }
